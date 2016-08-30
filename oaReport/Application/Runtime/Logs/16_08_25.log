@@ -1,0 +1,66 @@
+[ 2016-08-25T15:02:59+08:00 ] ::1 /oaReport/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\oaReport\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\oaReport\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-08-25T15:03:31+08:00 ] ::1 /oaReport/index.php?s=/Home/Index/Bnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\oaReport\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ComeBackHead` [ RunTime:0.002312s ]
+SQL: SELECT ComeBackHead.ComeBack_Date,ComeBackHead.Tape_No,ComeBackHead.Contract_Id,ComeBackHead.ComeBack_Memo,Material.Material_Name,ComeBackBody.Qty,ComeBackBody.Price,ComeBackBody.Amount,ComeBackHead.LastUpdator FROM `ComeBackHead` LEFT JOIN ComeBackBody on ComeBackHead.Tape_No = ComeBackBody.Tape_No LEFT JOIN Material on ComeBackBody.Material_Id = Material.Material_Id  WHERE ( ComeBackHead.Tape_No = 'BCK-0120' ) ORDER BY ComeBackHead.ComeBack_Date  [ RunTime:0.002523s ]
+
+[ 2016-08-25T15:04:29+08:00 ] ::1 /oaReport/index.php?s=/Home/Index/comeBack
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\oaReport\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `ComeBackHead` [ RunTime:0.002295s ]
+SQL: SELECT ComeBackHead.ComeBack_Date,ComeBackHead.Tape_No,ComeBackHead.Contract_Id,ComeBackHead.ComeBack_Memo,Material.Material_Name,ComeBackBody.Qty,ComeBackBody.Price,ComeBackBody.Amount,ComeBackHead.LastUpdator FROM `ComeBackHead` LEFT JOIN ComeBackBody on ComeBackHead.Tape_No = ComeBackBody.Tape_No LEFT JOIN Material on ComeBackBody.Material_Id = Material.Material_Id  WHERE ( (ComeBackHead.ComeBack_Date >= '2016-07-01') AND (ComeBackHead.ComeBack_Date <= '2016-08-15')  ) ORDER BY ComeBackHead.ComeBack_Date  [ RunTime:0.005605s ]
+
+[ 2016-08-25T15:13:07+08:00 ] ::1 /oaReport/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\oaReport\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 C:\wamp\www\oaReport\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
